@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: black;
+  backdrop-filter: blur(5px);
+  position: relative;
+  overflow: hidden;
+}
+
+.navbar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  color: white;
+  box-shadow: 0 0 10px #00f7ff, 0 0 20px #0099ff;
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-container a{
+    color: white;
+    text-decoration: none;
+    margin: 1rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.menu a:hover{
+    background:  linear-gradient(45deg, #00f7ff, #0099ff);
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.menu::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #00f7ff, #0099ff);
+    z-index: -1;
+}
+
+.Logout{
+     padding: 1rem;
+     text-align: center;
+     justify-self: unset;
+     margin-left: auto;
+}
+
+.Logout:hover{
+    background: linear-gradient(45deg, red, orange);
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+h1 {
+  font-size: 35px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
